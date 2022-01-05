@@ -8,6 +8,12 @@
 
     export let actions =[]
 
+    export let pagination = {
+        enabled: true,
+        limit: 2,
+        summary: false
+    }
+
     function action(row){
         alert(row.cells[0].data)
     }
@@ -27,4 +33,4 @@
     });
 </script>
 
-<Grid {columns} {data} />
+<Grid {columns} {data} {pagination}/>
