@@ -14,8 +14,22 @@
         summary: false
     }
 
+    export let search = false;
+
     function action(row){
         alert(row.cells[0].data)
+    }
+
+    let language = {
+        'search': {
+            'placeholder': '🔍 Search...aaaa'
+        },
+        'pagination': {
+            'previous': '⬅️',
+            'next': '➡️',
+            'showing': '😃 Displaying',
+            'results': () => 'Records'
+        }
     }
 
     actions.forEach(element => {
@@ -33,4 +47,4 @@
     });
 </script>
 
-<Grid {columns} {data} {pagination}/>
+<Grid {columns} {data} {pagination} {language} {search}/>

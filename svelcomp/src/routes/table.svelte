@@ -88,6 +88,7 @@
 		actions={[{name:'info', text:'info'}]}
 		columns={['name', 'email']}
     pagination={{limit:3, summary:false}}
+    search={true}
 	/>
 </div>
 
