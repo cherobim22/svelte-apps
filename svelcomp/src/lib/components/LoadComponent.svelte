@@ -5,7 +5,7 @@
 </script>
 
 {#if active}
- <img class="image" src="sun_010.svg" width={size} alt="">   
+ <img class="image" src="sun.svg" width={size} alt="">   
 {/if}
 
 
